@@ -29,7 +29,10 @@ class PokedexViewModel(
         observeJob = observePokemonsUseCase(query)
             .onEach {
                 changeState {
-                    copy(pokemons = it)
+                    copy(
+                        pokemons = it,
+                        isLoading = false,
+                    )
                 }
             }
             .launchIn(viewModelScope)

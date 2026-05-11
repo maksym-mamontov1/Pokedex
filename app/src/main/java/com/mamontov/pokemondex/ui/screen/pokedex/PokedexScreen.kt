@@ -20,6 +20,7 @@ fun PokedexScreen() {
 
     PokedexScreenComponent(
         pokemons = state.pokemons,
+        isLoading = state.isLoading,
         onFavoriteClick = viewModel::onFavoriteClick,
         onSearchChanged = viewModel::onSearchChanged
     )
