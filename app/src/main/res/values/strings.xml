@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">PokemonDex</string>
+
+    <string name="pokedex_pokemon_title">Pokédex</string>
+    <string name="pokedex_pokemon_stats_hp">HP</string>
+    <string name="pokedex_pokemon_stats_attack">Attack</string>
+    <string name="pokedex_pokemon_stats_defence">Defence</string>
+    <string name="pokedex_pokemon_stats_special_attack">Sp. Atk</string>
+    <string name="pokedex_pokemon_stats_special_defence">Sp. Def</string>
+    <string name="pokedex_pokemon_stats_speed">Speed</string>
+    <string name="pokedex_pokemon_stats_base_total">Base total: %1$s</string>
+
+    <string name="pokedex_pokemon_favorite_title">Wishlist</string>
+    <string name="pokedex_pokemon_favorite_title_placeholder">No Favorites Yet</string>
+    <string name="pokedex_pokemon_favorite_description_placeholder">Tap the heart on any Pokémon to add it to your wishlist</string>
+
+    <string name="pokedex_pokemon_search_hilt">Search by name, type, or ability</string>
+
+    <string name="nav_pokedex">Pokédex</string>
+    <string name="nav_wishlist">Wishlist</string>
+</resources>
