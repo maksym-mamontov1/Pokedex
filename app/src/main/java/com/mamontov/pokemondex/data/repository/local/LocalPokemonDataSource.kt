@@ -26,11 +26,8 @@ class LocalPokemonDataSource(
     suspend fun getPokemon(pokemonId: Int): Pokemon = pokemonDao.getPokemon(pokemonId)
         .run(mapper::toDomain)
 
-    suspend fun addPokemon(pokemon: Pokemon) {
-        val favoriteIds = pokemonDao.getFavoriteIds()
-        pokemonDao.addPokemon(
-            mapper.toLocal(pokemon).copy(isFavorite = favoriteIds.contains(pokemon.id))
-        )
+    suspend fun replacePokemon(pokemon: Pokemon) {
+        pokemonDao.addPokemon(mapper.toLocal(pokemon))
     }
 
     fun observeFavoriteCount(): Flow<Int> = pokemonDao.observeFavoriteCount()

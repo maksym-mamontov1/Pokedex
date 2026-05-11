@@ -22,7 +22,7 @@ class PokemonRepositoryImpl(
 
     override suspend fun changePokemonFavorite(pokemonId: Int): Boolean {
         val pokemon = localDataSource.getPokemon(pokemonId)
-        localDataSource.addPokemon(pokemon.copy(isFavorite = !pokemon.isFavorite))
+        localDataSource.replacePokemon(pokemon.copy(isFavorite = !pokemon.isFavorite))
         return true
     }
 
